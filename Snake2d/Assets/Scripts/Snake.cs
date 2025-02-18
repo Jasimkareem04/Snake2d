@@ -75,7 +75,7 @@ public class SnakeMovement : MonoBehaviour
         {
             Grow();
         }
-        else if (collision.tag == "Obstacle")
+        else if (collision.tag == "Obstacle" || collision.tag == "Head")
         {
             ResetState();
         }
